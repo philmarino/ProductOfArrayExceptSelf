@@ -13,6 +13,7 @@ def productExceptSelf(nums):
     retList = []
     for index in range(len(nums)):
         retList.append(product(nums[0:index:1] + nums[index+1::1]))
+        #see https://www.geeksforgeeks.org/python-list-slicing/
     return retList
 
         
